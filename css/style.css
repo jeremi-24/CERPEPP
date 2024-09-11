@@ -10,6 +10,15 @@
 .lien{
     font-size: 13px!important;
 }
+.logop{
+   
+}
+@media (max-width: 1500px) {
+    .logop{
+        padding-left:90px;
+    }  
+}
+
 .banniere {
     position: relative;
     height: 500px;
