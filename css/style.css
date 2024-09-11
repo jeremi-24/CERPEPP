@@ -13,11 +13,31 @@
 .logop{
    
 }
-@media (max-width: 1500px) {
+@media screen and (max-width: 1366px) {
+    /* Styles pour les ordinateurs portables */
     .logop{
-        padding-left:90px;
-    }  
+       padding-left: 100px;
+    }
 }
+@media screen and (max-width: 1200px) {
+    /* Styles pour les ordinateurs portables */
+    .logop{
+       padding-left: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Styles pour les smartphones */
+    .logop{
+        padding-left: 00px;
+     }
+}
+@media screen and (max-width: 1024px) {
+    /* Styles pour les tablettes */
+    .logop{
+        padding-left: 00px;
+     }
+}
+
 
 .banniere {
     position: relative;
@@ -231,6 +251,7 @@
     .sticky-top.navbar-light {
         position: relative;
         background: var(--bs-white);
+        margin-right:60px ;
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -757,6 +778,7 @@
     position: relative;
     margin-bottom: 30px;
     padding: 0 25px 25px 25px;
+    text-align: center;
 }
 
 .testimonial .testimonial-item::before {
@@ -787,12 +809,13 @@
 
 .testimonial .testimonial-item .testimonial-text {
     padding: 25px 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .testimonial .testimonial-item .testimonial-title {
     display: flex;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .testimonial .testimonial-item  .testimonial-quote-left {
@@ -1386,6 +1409,18 @@
     height: auto;
     display: block;
   }
+  .contient-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px; /* Ajustez la hauteur maximale ici */
+}
+.gallery-section {
+    margin-bottom: 30px;
+}
+.contient-image {
+    margin-bottom: 0px; /* Espacement vertical entre les images augmenté */
+}
   
   .text-white1{
      font-size: 1.5em  !important;
@@ -1412,7 +1447,7 @@
     max-height: 500px; /* Fixe une hauteur maximale */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .blog-img {
@@ -1441,11 +1476,15 @@
 
   .blog-text {
     flex-grow: 1;
+    width: 100%;
+    text-align: justify;
+    
   }
+  .blog-text::first-line {
+    text-align: center; /* Assure que la première ligne du texte est centrée */
+}
 
-  .blog-footer {
-    margin-top: 20px;
-  }
+
 
 
    /* Style de la carte */
