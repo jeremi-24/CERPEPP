@@ -986,8 +986,8 @@
 
 
 .logofond{
-    background-image: url(/img/fond.png);
-    background-position: right top;
+    background-image: url(./img/fond.png);
+    background-position: left center ;
     background-repeat: no-repeat;
     position: relative;
     z-index: -1;
@@ -1004,7 +1004,7 @@
 .logofond{
   background-image: url(/img/fond.png);
    
-    background-position: left top; /* Centrer l'image */
+    background-position:left center; /* Centrer l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     position: relative;
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
