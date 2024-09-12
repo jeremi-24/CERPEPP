@@ -134,3 +134,20 @@
 
 })(jQuery);
 
+
+
+    // Récupérer l'URL actuelle
+    const currentLocation = window.location.href;
+
+    // Sélectionner tous les éléments avec la classe nav-link
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Parcourir chaque lien
+    menuItems.forEach(item => {
+        // Comparer l'attribut href avec l'URL actuelle
+        if (item.href === currentLocation) {
+            // Ajouter la classe active
+            item.classList.add('active');
+        }
+    });
+
