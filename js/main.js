@@ -140,7 +140,7 @@
     const currentLocation = window.location.href;
 
     // Sélectionner tous les éléments avec la classe nav-link
-    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-link ');
 
     // Parcourir chaque lien
     menuItems.forEach(item => {
