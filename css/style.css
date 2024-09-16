@@ -1717,3 +1717,7 @@
     z-index: 2;
     color: #fff !important; /* Couleur du texte si besoin */
 }
+
+.justifier{
+    text-align: justify;
+}
