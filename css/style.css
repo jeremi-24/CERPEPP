@@ -7,6 +7,9 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
+
+  
+
 .lien{
     font-size: 13px!important;
 }
@@ -793,6 +796,8 @@
     z-index: -1;
 }
 
+
+
 .testimonial .testimonial-item .testimonial-img {
     display: flex;
     justify-content: center;
@@ -985,40 +990,41 @@
 /*** copyright end ***/
 
 
-.logofond{
-    background-image: url(./img/fond.png);
-    background-position: left center ;
+
+.logofond {
+    background-image: url(/img/des1.svg);
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: -1;
-    background-size: cover; /* La largeur prend 100% et la hauteur s'ajuste automatiquement */
+    background-size: contain;
+    
+    animation: zoomBackground 4s ease-in-out forwards; /* Ajoute 'forwards' pour maintenir le style final */
+  }
+  
+  @keyframes zoomBackground {
+    0% {
+      background-size: contain; /* Débute avec la taille d'origine */
+    }
+    10% {
+      background-size: 30%; /* Zoom à 30% */
+    }
+    50% {
+      background-size: 90%; /* Zoom à 60% */
+    }
+    100% {
+      background-size: 130%; /* Zoom final à 130% */
+    }
   }
   
   
-@media (max-width: 768px) {
-    body {
-        background-size: contain;
-        background-position:  center;
+  @media (max-width: 450px) {
+    .logofond {
+      background-size: cover; /* Utilise cover pour prendre tout l'écran sur mobile */
+      background-position: center;
+      background-position: center;
     }
-}
-.logofond{
-  background-image: url(/img/fond.png);
-   
-    background-position:left center; /* Centrer l'image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    position: relative;
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-   
-    z-index: -1;
-    background-size:contain; /* Ajuste l'image pour qu'elle soit complètement visible */
-    
-}
-@media (max-width: 768px) {
-    body {
-        background-size: contain;
-        background-position:  center;
-    }
-}
+  }
 
 .bg-primary {
     background-color: #ffffff !important;
@@ -1277,6 +1283,7 @@
   
     .image-left .card-container {
         flex-direction: row;
+      
     }
   
     .image-right .card-container {
@@ -1353,60 +1360,77 @@
 
  /*outil*/
 
- .grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr) !important; /* Crée 5 colonnes */
-    gap: 10px; /* Espacement entre les carreaux */
-    padding: 10px;
-    background-color:var(--heading-color);
-  }
-  
-  .grid-item {
-    background-color: #ffffff; /* Couleur de fond pour les carreaux */
+ .square-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* This ensures a 1:1 aspect ratio */
+}
+
+.square-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px; /* Ajuste l'espace intérieur si besoin */
-  }
-  
-  .grid-item img {
+}
+
+.square-content img {
     max-width: 100%;
-    height: auto;
-    object-fit: cover; /* Couvre bien l'espace disponible */
-  }
-  /* Responsive pour les écrans moyens */
-  @media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes sur les écrans moyens */
-  }
-  }
-  
-  /* Responsive pour les petits écrans */
-  @media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les petits écrans */
-  }
-  }
-  
-  /* Responsive pour les très petits écrans */
-  @media (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 colonne sur les très petits écrans */
-  }
-  }
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales properly */
+}
 
   /*style pour galerie*/
-  .gallery-item {
-    margin-bottom: 15px;
-  }
-  .filter-btn {
-    margin: 5px;
-  }
-  .gallery-item img {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px; /* Espacement entre les images */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Optionnel : ajouter une bordure */
+    border-radius: 4px; /* Optionnel : arrondir les coins */
+}
+
+.gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur sans déformation */
     display: block;
-  }
+}
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing {
+    display: inline-block; /* Permet d'ajuster la largeur en fonction du texte */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    white-space: pre-wrap; /* Permet les retours à la ligne */
+    border-right: 2px solid black; /* Coursier */
+    animation: typing 5s steps(40, end) 1, blink 0.75s step-end infinite; /* Animation de frappe et curseur clignotant */
+    font-family: monospace; /* Police pour un effet de frappe */
+    width: fit-content; /* Ajuste la largeur du texte */
+    /* Optionnel: Ajoutez des marges ou des espacements si nécessaire */
+}
+
+/* Animation continue de typing */
+.typing-restart {
+    animation: none;
+    /* Ajoutez une propriété pour ajuster la durée de l'animation */
+}
+
   .contient-image img {
     width: 100%;
     height: auto;
@@ -1720,4 +1744,67 @@
 
 .justifier{
     text-align: justify;
+}
+
+
+
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 11ch;
+    }
+    50% {
+      width: 0;
+    }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+   width: 11ch;
+    animation: typing 10s steps(20, end) infinite;
+  }
+
+
+
+  .animate-charcter
+{
+    font-size: 40px;
+    
+  background-image: linear-gradient(
+    -225deg,
+    #263677 3%,
+    #3B4D94 29%,
+    #DB471A 67%,
+    #F17704 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width: 768px) {
+    .africa{
+    width: 400px;
+    
+  }
 }
