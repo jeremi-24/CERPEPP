@@ -992,17 +992,61 @@
 
 
 .logofond {
-    background-image: url(../img/des1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: -1;
-    background-size: contain;
-    
+  background-image: url('../img/ICONE\ CERPEPP\ LOUPE1.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: contain; /* Ajuste l'image pour couvrir tout l'élément */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-position: center ; /* Centre l'image dans l'élément */
+  height: 100%; /* Hauteur de l'élément */
+  width: 100%; /* Largeur de l'élément */
+  position: relative;
+ 
+  
+
+    animation: zoomBackground 4s ease-in-out forwards; /* Ajoute 'forwards' pour maintenir le style final */
+  }
+
+.logofond3 {
+  background-image: url('../img/ICONE\ CERPEPP\ LOUPE1.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: contain; /* Ajuste l'image pour couvrir tout l'élément */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-position: left center ; /* Centre l'image dans l'élément */
+  height: 100%; /* Hauteur de l'élément */
+  width: 100%; /* Largeur de l'élément */
+  position: relative;
+ 
+  
+
     animation: zoomBackground 4s ease-in-out forwards; /* Ajoute 'forwards' pour maintenir le style final */
   }
   
+.logofond2 {
+  background-image: url('../img/ligne.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: 100%; /* Ajuste l'image pour couvrir tout l'élément */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-position:  center; /* Centre l'image dans l'élément */
+  height: 100%; /* Hauteur de l'élément */
+  width: 100%; /* Largeur de l'élément */
+  position: relative;
+
+
+   
+  }
+ 
   @keyframes zoomBackground {
+    0% {
+      background-size: contain; /* Débute avec la taille d'origine */
+    }
+    10% {
+      background-size: 10%; /* Zoom à 30% */
+    }
+    80% {
+      background-size: 50%; /* Zoom à 60% */
+    }
+    100% {
+      background-size: 40%; /* Zoom final à 130% */ 
+    }
+  }
+  @keyframes zoomBackground2 {
     0% {
       background-size: contain; /* Débute avec la taille d'origine */
     }
@@ -1010,10 +1054,10 @@
       background-size: 30%; /* Zoom à 30% */
     }
     50% {
-      background-size: 90%; /* Zoom à 60% */
+      background-size: 50%; /* Zoom à 60% */
     }
     100% {
-      background-size: 130%; /* Zoom final à 130% */
+      background-size: 100%; /* Zoom final à 130% */
     }
   }
   
@@ -1749,26 +1793,17 @@
 
 
 
-@keyframes typing {
-    0% {
-      width: 0;
-    }
-    25% {
-      width: 11ch;
-    }
-    50% {
-      width: 0;
-    }
-  }
-  
-  .typing-animation {
+.typing-animation {
+    font-family: monospace; /* Donne un aspect de type machine à écrire */
+    white-space: nowrap; /* Empêche le texte de se plier à la ligne */
+    overflow: hidden; /* Cache le texte supplémentaire */
+}
+
+.cursor {
     display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-   width: 11ch;
-    animation: typing 10s steps(20, end) infinite;
-  }
+    animation: blink 0.7s step-end infinite; /* Animation du curseur clignotant */
+}
+
 
 
 
@@ -1808,3 +1843,77 @@
     
   }
 }
+
+
+
+/* Initial hover effect style */
+.hover-effect {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Zoom and color change on hover */
+.hover-effect:hover {
+    transform: scale(1.01);
+    background-color: #f17704;
+}
+
+/* Text color change on hover */
+.djibouti  a:hover  {
+    color: white;
+}
+
+
+
+.country-flag {
+    width: 24px; /* Ajuste la taille du drapeau */
+    height: 24px; /* Ajuste la taille du drapeau */
+    border-radius: 50%; /* Forme de cercle (si nécessaire) */
+    object-fit: contain; /* Ajuste l'image pour couvrir le cercle */
+}
+.country-flage {
+    width: 44px; /* Ajuste la taille du drapeau */
+    height: 44px; /* Ajuste la taille du drapeau */
+    border-radius: 50%; /* Forme de cercle (si nécessaire) */
+    object-fit: contain; 
+}
+
+/* Animation */
+.wrapper {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    max-width: 100%; /* Permet de gérer la largeur au besoin */
+    animation: typing 4s steps(30, end) infinite alternate,
+               blink .5s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+
+    40% {
+      width: auto; /* Montre la phrase complète */
+    }
+   
+    
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      border-color: black; /* Couleur du curseur */
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  

@@ -46,41 +46,45 @@
     // attractions carousel
     $(".blog-carousel").owlCarousel({
         autoplay: true,
+        autoplayHoverPause: true, // Pause au survol
+        autoplayTimeout: 10000, // Temps d'attente en millisecondes (ici 5 secondes)
         smartSpeed: 1500,
         center: false,
-        dots: false,
+        dots: true, // Activer les points de pagination
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left" aria-label="Previous"></i>', // Accessibilité avec aria-label
+            '<i class="fa fa-angle-right" aria-label="Next"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:3
+            1200: {
+                items: 3
             }
         }
     });
+    
 
 
     // testimonial carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
+        autoplayTimeout: 10000, // Temps d'attente en millisecondes (ici 5 secondes)
         center: false,
         dots: true,
         loop: true,
@@ -152,3 +156,15 @@
     });
 
     
+    const cursor = document.querySelector('.cursor');
+const text = document.querySelector('.text');
+
+text.addEventListener('animationend', () => {
+    cursor.classList.add('reverse-cursor');
+});
+
+document.querySelector('.reverse-cursor').addEventListener('animationend', () => {
+    cursor.style.animation = 'move 2s linear forwards';
+});
+
+
