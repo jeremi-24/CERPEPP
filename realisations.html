@@ -111,75 +111,280 @@
         <!-- Blog Start -->
         <div class="container-fluid  blog py-5" style="text-align:left;">
           <!-- Filter by Country -->
-          <div class="text-center mb-4">
-              <button class="btn btn-primary filter-country-btn" data-country="*">Tous</button>
-              <button class="btn btn-secondary filter-country-btn" data-country=".djibouti">
-                <img src="./img/djibouti.webp" alt="Drapeau Djibouti" class="country-flag">
-                Djibouti
-            </button>
-            
-              <button class="btn btn-secondary filter-country-btn" data-country=".civ">
-                <img src="./img/flag.webp" alt="Drapeau Djibouti" class="country-flag">
-                Côte d'Ivoire</button>
-              <button class="btn btn-secondary filter-country-btn" data-country=".togo">
-                <img src="./img/togo.webp" alt="Drapeau Djibouti" class="country-flag">
-                Togo</button>
-              <button class="btn btn-secondary filter-country-btn" data-country=".rdc">
-                <img src="./img/democratic-republic-of-congo.webp" alt="Drapeau Djibouti" class="country-flag">
-                RDC</button>
-          </div>
+          <div class="text-center mb-4 row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-primary filter-country-btn w-100 wow fadeInDown" data-country="*">Tous</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".djibouti">
+                    <img src="./img/djibouti.webp" alt="Drapeau Djibouti" class="country-flag">
+                    Djibouti
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".civ">
+                    <img src="./img/flag.webp" alt="Drapeau Côte d'Ivoire" class="country-flag">
+                    Côte d'Ivoire
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".rca">
+                    <img src="./img/central-african-republic.webp" alt="Drapeau Centrafrique" class="country-flag">
+                    Centrafrique
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".haiti">
+                    <img src="./img/haiti.webp" alt="Drapeau Haïti" class="country-flag">
+                    Haïti
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".togo">
+                    <img src="./img/togo.webp" alt="Drapeau Togo" class="country-flag">
+                    Togo
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".rdc">
+                    <img src="./img/democratic-republic-of-congo.webp" alt="Drapeau RDC" class="country-flag">
+                    RDC
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".sao">
+                    <img src="./img/sao-tome-and-prince.png" alt="Drapeau RDC" class="country-flag">
+                    Sao-Tomé-Et-Prince 
+                </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                <button class="btn btn-secondary filter-country-btn w-100" data-country=".com">
+                    <img src="./img/comoros.png" alt="Drapeau RDC" class="country-flag">
+                    Union des Comores
+                </button>
+            </div>
+        </div>
+        
           <!-- Gallery Section -->
           <div class="row isotope">
 
-             <!-- Côte d'Ivoire Projects -->
-            <div class="col-6 gallery-section civ mb-4 p-3 shadow-sm rounded hover-effect">
-                <a href="projetcotedivoire1.html" class="text-decoration-none">
-                    <h3 class="text-primary fw-bold">
-                        Formation de l’équipe de la Direction de Veille et Suivi des Programmes (DVSP) du Ministère de l’Éducation Nationale et de l’Alphabétisation (MENA) de la Côte d’Ivoire
-                    </h3>
-                </a>
-                <div class="row">
-                    <!-- Images or other content can go here -->
-                </div>
-            </div>
-            <!-- Togo Projects -->
-            <div class="col-6 gallery-section togo mb-4 p-3 shadow-sm rounded hover-effect">
-                <a href="projettogo.html" class="text-decoration-none">
-                    <h3 class="text-primary fw-bold">
-                        Évaluation nationale des compétences de base en lecture (EGRA), en mathématique (EGMA) et facteurs réussite des élèves du primaire
-                    </h3>
-                </a>
-                <div class="row">
-                    <!-- Images or other content can go here -->
-                </div>
-            </div>
-             <!-- RDC Projects -->
-            <div class="col-6 gallery-section rdc mb-4 p-3 shadow-sm rounded hover-effect">
-                <a href="projetrdc.html" class="text-decoration-none">
-                    <h3 class="text-primary fw-bold">Évaluation d’impact du projet d’Amélioration de la Qualité de l’Éducation (PAQUE)</h3>
-                </a>
-                <div class="row">
-                    <!-- Images or other content can go here -->
-                </div>
-            </div>
+             
+           <!-- Côte d'Ivoire Projects -->
+            <div class=" gallery-section civ mb-4 p-3 wow fadeInLeft shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://cerpepp.com/wp-content/uploads/2020/04/Cote_dIvoire_moi.png" alt="Carte du drapeau de la Côte d'Ivoire" />
+                    </div>
         
-            <div class="col-6 gallery-section rdc mb-4 p-3 shadow-sm rounded hover-effect">
-                <a href="projetrdc2.html" class="text-decoration-none">
-                    <h3 class="text-primary fw-bold">Évaluation Nationale CIEAS</h3>
-                </a>
-                <div class="row">
-                    <!-- Images or other content can go here -->
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>République de Côte d'Ivoire</h5>
+                        <ul>
+                            <li>
+                                <a href="projetcotedivoire1.html#ci1" class="text-decoration-none">
+                                    Formation de l’équipe de la Direction de Veille et Suivi des Programmes (DVSP) du Ministère de l’Éducation Nationale et de l’Alphabétisation (MENA) de la Côte d’Ivoire
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projetcotedivoire1.html#ci2" class="text-decoration-none">
+                                    Vérification indépendante pour la certification de l’atteinte des résultats d’apprentissage des élèves du Projet d’Amélioration de la Prestation des Services Educatifs (PAPSE) 2020-2023 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projetcotedivoire1.html#ci3" class="text-decoration-none">
+                                    Vérification indépendante pour la certification de l’atteinte des résultats d’apprentissage des élèves du Projet d’Amélioration de la Prestation des Services Educatifs (PAPSE) 2020-2023 
+                                </a>
+                            </li>
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
                 </div>
             </div>
+           <!-- Centrafrique -->
+            <div class="gallery-section rca mb-4 wow fadeInRight p-3 shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://cerpepp.com/wp-content/uploads/2023/07/carte_rca_simple.webp" alt="Carte du drapeau de la Côte d'Ivoire" />
+                    </div>
+        
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>République Centrafricaine</h5>
+                        <ul>
+                            <li>
+                                <a href="projetrc.html#rc1" class="text-decoration-none">
+                                    Etude d’évaluation d’impact de l’introduction et l’utilisation de la langue Sango sur les apprentissages (EGRA/EGMA) des élèves des trois premières années du primaire 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projetrc.html#rc2" class="text-decoration-none">
+                                    Appui technique aux évaluations SDI des enseignants du primaire de la République Centrafricaine 
+                                </a>
+                            </li>
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Togo Projects -->
+            <div class="gallery-section togo mb-4 wow fadeInUp p-3 shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_map_of_Togo.svg"  alt="Carte du drapeau du Togo" />
+                     </div>
+        
+                     <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                         <h5>République du Togo</h5>
+                         <ul>
+                              <li><a href="projettogo.html#tg1" class="text-decoration-none">Évaluation nationale des compétences de base en lecture (EGRA), en mathématique (EGMA) et facteurs réussite des élèves du primaire</a></li>
+                              <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                         <ul>
+                              <li><a href="projettogo.html#tg2" class="text-decoration-none">Adaptation du test d’évaluation des compétences de base en lecture (EGRA) pour les élèves du sous-cycle du Cour Préparatoire (CP) du primaire </a></li>
+                              <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                         <ul>
+                              <li><a href="projettogo.html#tg3" class="text-decoration-none">Tableau de Bord Mondial des Politiques Educatives (TBMPE/GEPD) </a></li>
+                              <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- RDC Projects -->
+            <div class="gallery-section rdc mb-4 p-3 wow fadeInLeft shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://cerpepp.com/wp-content/uploads/2020/04/flag.png" alt="Carte du drapeau de la RDC" />
+                    </div>
+        
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>République Démocratique du Congo</h5>
+                        <ul>
+                            <li>
+                                <a href="projetrdc.html" class="text-decoration-none">
+                                    Évaluation d’impact du projet d’Amélioration de la Qualité de l’Éducation (PAQUE)
+                               </a>
+                            </li>
+                            <li>
+                                <a href="projetrdc1.html" class="text-decoration-none">
+                                    Évaluation Nationale CIEAS
+                                </a>
+                            </li>
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Comores Projects -->
+            <div class="gallery-section com mb-4 p-3 wow fadeInLeft shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_map_of_Comoros_%28united%29.svg" alt="Carte du drapeau de la RDC" />
+                    </div>
+        
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>Union des Comores</h5>
+                        <ul>
+                            <li>
+                                <a href="projetcomore.html" class="text-decoration-none">
+                                    Appui technique pour l’évaluation nationale EGRA / EGMA des élèves de 3ème année du primaire 
+                               </a>
+                            </li>
+                          
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Sao tomé Projects -->
+            <div class="gallery-section sao mb-4 p-3 wow fadeInLeft shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="./img/pngfind.com-nigeria-flag-png-5721476.png" alt="Carte du drapeau de la RDC" />
+                    </div>
+        
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>Sao-Tomé-Et-Prince </h5>
+                        <ul>
+                            <li>
+                                <a href="projetsao.html" class="text-decoration-none">
+                                    Appui technique pour la rédaction du chapitre Qualité et Gestion du système pour l’analyse sectorielle de type RESEN (Rapport d’état du système éducatif national) de la République de Sao-Tomé-Et-Principe 
+                               </a>
+                            </li>
+                          
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Haiti Projects -->
+            <div class="gallery-section haiti mb-4 wow fadeInRight p-3 shadow-sm rounded">
+                <div class="carte-exp">
+                    <!-- Bloc de l'image à gauche -->
+                    <div class="carte-img">
+                        <img src="https://cerpepp.com/wp-content/uploads/2020/04/Flag_map_of_Haiti.svg_.png" alt="Carte du drapeau de la RDC" />
+                    </div>
+        
+                    <!-- Bloc du texte à droite, centré verticalement -->
+                    <div class="carte-cont">
+                        <h5>République d’Haïti</h5>
+                        <ul>
+                            <li>
+                                <a href=" " class="text-decoration-none">
+                                    Développement du système d’évaluation des apprentissages des élèves dans le cadre du projet « Pour une éducation de qualité en Haïti (PEQH) » (Mai 2018) ;
+                               </a>
+                            </li>
+                            <li>
+                                <a href=" " class="text-decoration-none">
+                                    Enquête de collecte des données de référence du Système d’Assurance de la Qualité (SAQ) de l’éducation en Haïti (Novembre 2017).
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projethaiti1.html" class="text-decoration-none">
+                                    Étude de satisfaction et d’analyse de l’impact socio-économique des Mutuelles de Solidarité (MUSO) à Dessalines sur la situation économique des familles, particulièrement sur leurs capacités à scolariser leurs enfants 
+                                </a>
+                            </li>
+                            <!-- Ajoutez d'autres projets ici si nécessaire -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                                         
             <!-- Djibouti Projects -->
-            <div class="col-6 gallery-section djibouti mb-4 p-3 shadow-sm rounded hover-effect">
-                <a href="projetdjibouti.html" class="  text-decoration-none">
-                    <h3 class="text-primary fw-bold">EGMA 2017 & 2018</h3>
-                </a>
-                <div class="row">
-                    <!-- Images or other content can go here -->
-                </div>
-            </div>
+              <div class="gallery-section djibouti wow fadeInUp mb-4 p-3 shadow-sm rounded">
+                  <div class="carte-exp">
+                      <!-- Bloc de l'image à gauche -->
+                          <div class="carte-img">
+                          <img src="https://cerpepp.com/wp-content/uploads/2020/04/Flag-map_of_Djibouti.svg_.png" 
+                               alt="Carte du drapeau de Djibouti" />
+                      </div>
+        
+                      <!-- Bloc du texte à droite, centré verticalement -->
+                      <div class="carte-cont">
+                          <h5>République de Djibouti</h5>
+                          <ul>
+                              <li><a href="projetdjibouti.html" class="text-decoration-none">Appui technique au développement des évaluations nationales indépendantes (ENI) de Djibouti </a></li>
+                              <li><a href="projetdjibouti1.html" class="text-decoration-none">Développement, administration, traitement et analyse statistique des données de l’évaluation des apprentissages de base en mathématique (EGMA) des élèves et des pratiques pédagogiques des enseignants en salles de classe au Djibouti-Edition 2018 </a></li>
+                              <li><a href="projetdjibouti2.html" class="text-decoration-none">Développement, administration, traitement et analyse statistique des données de l’évaluation des apprentissages de base en mathématique (EGMA) des élèves et des pratiques pédagogiques des enseignants en salles de classe au Djibouti-Edition 2017 </a></li>
+                             
+                          </ul>
+                      </div>
+                 </div>
+              </div>
+
         </div>
         
       </div>
@@ -288,19 +493,24 @@
          <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
          <script>
           $(document).ready(function(){
+            $('.exp').hide();
               // When a country button is clicked
               $('.filter-country-btn').on('click', function(){
                   var country = $(this).attr('data-country');
+               
                   
+                 
                   if(country === '*'){
                       // Show all gallery sections when "Tous" is selected
                       $('.gallery-section').fadeIn();
+                      $('.exp').hide();
                   } else {
                       // Hide all gallery sections
                       $('.gallery-section').hide();
                       
                       // Show the selected country's projects
-                      $(country).fadeIn();
+                      $('.gallery-section' + country).fadeIn();  // Affiche les sections du pays
+                      $('.gallery-section' + country + ' .exp').fadeIn();  // Affiche les cartes-exp du pays
                   }
               });
           });

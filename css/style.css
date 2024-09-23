@@ -7,7 +7,9 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
-
+a:hover{
+    color:#f17704;
+}
   
 
 .lien{
@@ -1917,3 +1919,239 @@
   }
   
   
+
+  /* Styles généraux */
+
+
+.carte-exp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    ;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.carte-img img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carte-cont {
+    max-width: 800px;
+    margin-left: 20px;
+  
+}
+
+
+
+/* Styles pour écrans plus petits */
+@media screen and (max-width: 768px) {
+    .carte-exp {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carte-img {
+        margin-bottom: 20px;
+    }
+
+    .carte-cont {
+        margin-left: 0;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    li {
+        font-size: 0.95rem;
+    }
+}
+
+.exp{
+    background-image: url('../img/ligne.svg');
+}
+.carte-exp{
+    background-color: #ecececc9;
+}
+.carte-exp a:hover{
+    color:#f17704;
+}
+
+
+
+.sidebar {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    flex: 1; /* Utilise l'espace disponible */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-grid a {
+    flex: 1 1 calc(33.33% - 10px); /* Trois images par ligne avec espacement */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-description {
+    margin-top: 20px;
+}
+
+.project-description h3 {
+    margin-top: 20px;
+}
+
+.project-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.project-cta a {
+    font-weight: bold;
+}
+
+
+
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+  
+    background-color: #F1F6F4;
+  }
+  
+  .cookie-consent-banner__inner {     
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  
+  .cookie-consent-banner__copy { 
+    margin-bottom: 16px;
+  }
+  
+  .cookie-consent-banner__actions {    
+  }
+  
+  .cookie-consent-banner__header {
+    margin-bottom: 8px;
+    
+    font-family: "CeraPRO-Bold", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .cookie-consent-banner__description {
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    color: #838F93;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .cookie-consent-banner__cta {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 164px;
+    padding: 11px 13px;
+      
+    border-radius: 2px;
+    
+    background-color:#f17704;
+     
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .cookie-consent-banner__cta--secondary { 
+    padding: 9px 13px;
+    
+    border: 2px solid #3A4649;
+    
+    background-color: transparent;
+    
+    color: #f17704;
+  }
+  
+  .cookie-consent-banner__cta:hover {
+    background-color: #f17704;
+  }
+  
+  .cookie-consent-banner__cta--secondary:hover {
+    border-color: #839384;
+      
+    background-color: transparent;
+    
+    color: #f17704;
+  }
+  
+  .cookie-consent-banner__cta:last-child {
+    margin-left: 16px;
+  }
+  
+
+  
+  
+  .clients .swiper {
+    padding: 10px 0;
+  }
+  
+  .clients .swiper-wrapper {
+    height: auto;
+  }
+  
+  .clients .swiper-slide img {
+    transition: 0.3s;
+  }
+  
+  .clients .swiper-slide img:hover {
+    transform: scale(1.1);
+  }
+  .swiper-container {
+    max-width: 80%; /* Ajustez la largeur maximale ici */
+    margin: 0 auto; /* Centre le carousel */
+}
+
+.swiper-slide {
+    flex: 0 0 auto; /* Empêche les slides de se réduire */
+    width: 150px; /* Ajustez la largeur des slides ici */
+}
