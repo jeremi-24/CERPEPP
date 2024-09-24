@@ -10,8 +10,6 @@
 a:hover{
     color:#f17704;
 }
-  
-
 .lien{
     font-size: 13px!important;
 }
@@ -42,13 +40,10 @@ a:hover{
         padding-left: 00px;
      }
 }
-
-
 .banniere {
     position: relative;
     height: 500px;
 }
-
 .banniere::before {
     content: '';
     position: absolute;
@@ -96,7 +91,6 @@ a:hover{
     transition: 0.5s;
     z-index: 99;
 }
-
 /*** Button Start ***/
 .btn {
     font-weight: 600;
@@ -188,9 +182,6 @@ a:hover{
 }
 
 /*** Topbar End ***/
-
-
-
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
@@ -213,7 +204,6 @@ a:hover{
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: var(--bs-dark);
 }
-
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
@@ -285,7 +275,6 @@ a:hover{
         max-height: 45px;
     }
 }
-
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -308,7 +297,6 @@ a:hover{
         z-index: 999;
         background-color: white;
     }
-    
     .sticky-top.navbar-light {
         position: fixed;
         background: var(--bs-light);
@@ -359,8 +347,6 @@ a:hover{
 .header-carousel .header-carousel-item img {
         height: 700px;
 }
-
-
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     position: absolute;
@@ -425,8 +411,6 @@ a:hover{
         margin-left: 45px;
     }
 }
-
-
 .header-carousel .header-carousel-item img {
     animation-name: image-zoom;
     animation-duration: 10s;
@@ -435,7 +419,6 @@ a:hover{
     animation-direction: alternate;
     transition: 1s;
 }
-
 @keyframes image-zoom {
     0%  {height: 100%; opacity: 0.9;}
 
@@ -468,7 +451,6 @@ a:hover{
         padding: 140px 0 60px 0;
     }
 }
-
 @media (max-width: 991px) {
     .bg-breadcrumb {
         padding: 60px 0 60px 0;
@@ -496,7 +478,6 @@ a:hover{
     box-shadow: 0 0 45px rgba(0, 0, 0, .2);
     ;
 }
-
 .service .service-item .service-img {
     position: relative;
     overflow: hidden;
@@ -523,7 +504,6 @@ a:hover{
     border: 1px solid transparent;
     transition: 0.5s;
 }
-
 .feature .feature-item:hover {
     border: 1px solid var(--bs-primary);
 }
@@ -543,7 +523,6 @@ a:hover{
     background: var(--bs-white);
     transition: 0.5s;
 }
-
 .offer-section .nav a.accordion-link.active {
     color: var(--bs-white);
     background: var(--bs-primary);
@@ -579,15 +558,12 @@ a:hover{
     position: relative;
     overflow: hidden;
 }
-
 .blog .blog-item .blog-img img {
     transition: 0.5s;
 }
-
 .blog .blog-item:hover .blog-img img {
     transform: scale(1.2);
 }
-
 .blog .blog-item .blog-img::after {
     content: "";
     position: absolute;
@@ -612,7 +588,6 @@ a:hover{
     left: 25px;
     z-index: 5;
 }
-
 .blog .blog-item .blog-img .blog-title a {
     color: var(--bs-white);
     background: var(--bs-primary);
@@ -678,7 +653,6 @@ a:hover{
     border-radius: 10px;
     transition: 0.5s;
 }
-
 .team .team-item::before {
     content: "";
     position: absolute;
@@ -695,7 +669,6 @@ a:hover{
 .team .team-item:hover::before {
     height: 0;
 }
-
 .team .team-item::after {
     content: "";
     position: absolute;
@@ -1132,7 +1105,6 @@ a:hover{
 .service-item img:hover {
     transform: scale(1.02);
 }
-
 /* Assurer que toutes les cartes ont la même hauteur */
 .service-item {
     display: flex;
@@ -1345,7 +1317,6 @@ a:hover{
         padding: 20px;
     }
   }
-  
   @media (max-width: 767px) {
     .list-list {
         flex-direction: column;
@@ -1381,7 +1352,6 @@ a:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-
 .feature-item img {
     transition: transform 0.3s ease;
 }
@@ -1422,20 +1392,17 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
-
 .square-content img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; /* Ensures the image scales properly */
 }
-
   /*style pour galerie*/
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px; /* Espacement entre les images */
 }
-
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -1551,10 +1518,6 @@ a:hover{
   .blog-text::first-line {
     text-align: center; /* Assure que la première ligne du texte est centrée */
 }
-
-
-
-
    /* Style de la carte */
    .carte {
     display: inline-flex;
@@ -1755,7 +1718,6 @@ a:hover{
     color: #fff; /* Couleur du texte si besoin */
     margin-top: 200px;
 }
-
 .banniere-contact .int2 {
     position: relative;
     z-index: 2;
@@ -1768,7 +1730,6 @@ a:hover{
     color: #fff; /* Couleur du texte si besoin */
     margin-top: 200px;
 }
-
 .banniere-equipe .int2 {
     position: relative;
     z-index: 2;
@@ -1781,7 +1742,6 @@ a:hover{
     color: #fff; /* Couleur du texte si besoin */
     margin-top: 200px;
 }
-
 .banniere-projet .int2 {
     position: relative;
     z-index: 2;
@@ -1791,10 +1751,6 @@ a:hover{
 .justifier{
     text-align: justify;
 }
-
-
-
-
 .typing-animation {
     font-family: monospace; /* Donne un aspect de type machine à écrire */
     white-space: nowrap; /* Empêche le texte de se plier à la ligne */
@@ -1805,9 +1761,6 @@ a:hover{
     display: inline-block;
     animation: blink 0.7s step-end infinite; /* Animation du curseur clignotant */
 }
-
-
-
 
   .animate-charcter
 {
@@ -1845,9 +1798,6 @@ a:hover{
     
   }
 }
-
-
-
 /* Initial hover effect style */
 .hover-effect {
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -1863,9 +1813,6 @@ a:hover{
 .djibouti  a:hover  {
     color: white;
 }
-
-
-
 .country-flag {
     width: 24px; /* Ajuste la taille du drapeau */
     height: 24px; /* Ajuste la taille du drapeau */
@@ -1917,12 +1864,7 @@ a:hover{
       border-color: transparent;
     }
   }
-  
-  
-
   /* Styles généraux */
-
-
 .carte-exp {
     display: flex;
     flex-direction: row;
@@ -1948,9 +1890,6 @@ a:hover{
     margin-left: 20px;
   
 }
-
-
-
 /* Styles pour écrans plus petits */
 @media screen and (max-width: 768px) {
     .carte-exp {
@@ -2074,7 +2013,6 @@ a:hover{
     font-size: 16px;
     line-height: 24px;
   }
-  
   .cookie-consent-banner__description {
     font-family: "CeraPRO-Regular", sans-serif, arial;
     font-weight: normal;
@@ -2199,7 +2137,6 @@ a:hover{
       animation: 35s slides infinite linear; /* Animation encore plus lente */
     }
   }
-  
   @media (max-width: 480px) {
     .logo_items img {
       height: 50px; /* Taille des logos encore plus petite pour les très petits écrans */
