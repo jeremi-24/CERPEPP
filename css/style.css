@@ -2129,29 +2129,84 @@ a:hover{
   }
   
 
-  
-  
-  .clients .swiper {
-    padding: 10px 0;
+  @keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
   
-  .clients .swiper-wrapper {
-    height: auto;
+  .logos {
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
   }
   
-  .clients .swiper-slide img {
-    transition: 0.3s;
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
   }
   
-  .clients .swiper-slide img:hover {
-    transform: scale(1.1);
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
   }
-  .swiper-container {
-    max-width: 80%; /* Ajustez la largeur maximale ici */
-    margin: 0 auto; /* Centre le carousel */
-}
-
-.swiper-slide {
-    flex: 0 0 auto; /* Empêche les slides de se réduire */
-    width: 150px; /* Ajustez la largeur des slides ici */
-}
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 35s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img {
+    height: 100px; /* Taille par défaut pour les grands écrans */
+    margin: 0 20px; /* Ajoute un espace de 20px à gauche et à droite de chaque logo */
+  }
+  
+  /* Adaptation pour les tablettes */
+  @media (max-width: 1024px) {
+    .logo_items img {
+      height: 80px; /* Taille plus petite pour les tablettes */
+      margin: 0 15px; /* Espacement réduit pour les tablettes */
+    }
+    .logo_items {
+      animation: 40s slides infinite linear; /* Animation légèrement plus lente */
+    }
+  }
+  
+  /* Adaptation pour les mobiles */
+  @media (max-width: 768px) {
+    .logo_items img {
+      height: 60px; /* Réduction de la taille des logos pour les mobiles */
+      margin: 0 10px; /* Espacement réduit pour les mobiles */
+    }
+    .logo_items {
+      animation: 35s slides infinite linear; /* Animation encore plus lente */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo_items img {
+      height: 50px; /* Taille des logos encore plus petite pour les très petits écrans */
+      margin: 0 8px; /* Espacement encore plus réduit pour les très petits écrans */
+    }
+    .logo_items {
+      animation: 50s slides infinite linear; /* Animation encore plus lente pour les très petits écrans */
+    }
+  }
+  
