@@ -981,18 +981,36 @@ a:hover{
   }
 
 .logofond3 {
-  background-image: url('../img/ICONE\ CERPEPP\ LOUPE1.svg'); /* Remplacez par l'URL de votre SVG */
-  background-size: contain; /* Ajuste l'image pour couvrir tout l'élément */
+  background-image: url('../img/logofond3.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
   background-repeat: no-repeat; /* Évite la répétition de l'image */
-  background-position: left center ; /* Centre l'image dans l'élément */
+  background-position:  center ; /* Centre l'image dans l'élément */
   height: 100%; /* Hauteur de l'élément */
   width: 100%; /* Largeur de l'élément */
   position: relative;
- 
   
-
-    animation: zoomBackground 4s ease-in-out forwards; /* Ajoute 'forwards' pour maintenir le style final */
   }
+.logofond5 {
+  background-image: url('../img/logofond6.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-position:  center ; /* Centre l'image dans l'élément */
+  height: 100%; /* Hauteur de l'élément */
+  width: 100%; /* Largeur de l'élément */
+  position: relative;
+  
+  }
+.logofond7 {
+  background-image: url('../img/logofond7.svg'); /* Remplacez par l'URL de votre SVG */
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-position:  center ; /* Centre l'image dans l'élément */
+  height: 100%; /* Hauteur de l'élément */
+  width: 100%; /* Largeur de l'élément */
+  position: relative;
+  
+  }
+
   
 .logofond2 {
   background-image: url('../img/ligne.svg'); /* Remplacez par l'URL de votre SVG */
@@ -2147,3 +2165,8 @@ a:hover{
     }
   }
  
+
+  .transparent{
+    background-color: rgba(255, 255, 255, 0.705)!important;
+    
+  }
