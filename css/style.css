@@ -2130,7 +2130,8 @@ a:hover{
   }
   
   .logo_items img {
-    height: 100px; /* Taille par défaut pour les grands écrans */
+    
+    height: 50px; /* Taille par défaut pour les grands écrans */
     margin: 0 20px; /* Ajoute un espace de 20px à gauche et à droite de chaque logo */
   }
   
