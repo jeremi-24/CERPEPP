@@ -2165,6 +2165,16 @@ a:hover{
       animation: 50s slides infinite linear; /* Animation encore plus lente pour les très petits écrans */
     }
   }
+  @media (min-width: 1200px) {
+    .logo_items img {
+      height: 90px; /* Réduction de la taille des logos pour les mobiles */
+      margin: 0 10px; /* Espacement réduit pour les mobiles */
+    }
+    .logo_items {
+      animation: 35s slides infinite linear; /* Animation encore plus lente */
+    }
+  }
+  
  
 
   .transparent{
