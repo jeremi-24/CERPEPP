@@ -777,7 +777,6 @@ a:hover{
     display: flex;
     justify-content: center;
 }
-
 .testimonial .testimonial-item .testimonial-img img {
     width: 100px; 
     height: 100px;
@@ -786,12 +785,10 @@ a:hover{
     border-style: double;
     background: var(--bs-white);
 }
-
 .testimonial .testimonial-item .testimonial-text {
     padding: 25px 0;
     text-align: justify;
 }
-
 .testimonial .testimonial-item .testimonial-title {
     display: flex;
     justify-content: space-between;
@@ -811,7 +808,6 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
-
 .testimonial .testimonial-item  .testimonial-quote-right {
     position: absolute;
     width: 60px; 
@@ -826,7 +822,6 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
-
 .testimonial-carousel .owl-stage-outer {
     margin-top: 58px;
     margin-right: -1px;
@@ -842,7 +837,6 @@ a:hover{
     border-radius: 30px;
     transition: 0.5s;
 }
-
 .testimonial .owl-nav .owl-prev:hover {
     background: var(--bs-secondary);
     color: var(--bs-white);
@@ -858,12 +852,10 @@ a:hover{
     border-radius: 30px;
     transition: 0.5s;
 }
-
 .testimonial .owl-nav .owl-next:hover {
     background: var(--bs-secondary);
     color: var(--bs-white);
 }
-
 .testimonial-carousel .owl-dots {
     display: flex;
     justify-content: center;
@@ -877,7 +869,6 @@ a:hover{
     background: var(--bs-primary);
     transition: 0.5s;
 }
-
 .testimonial-carousel .owl-dots .owl-dot.active {
     width: 30px;
     height: 30px;
@@ -885,7 +876,6 @@ a:hover{
     background: var(--bs-secondary);
     transition: 0.5s;
 }
-
 .testimonial-carousel .owl-dots .owl-dot span {
     position: relative;
     margin-top: 50%;
@@ -918,9 +908,6 @@ a:hover{
     transition: 0.5s;
 }
 
-/*** Testimonial End ***/
-
-/*** Footer Start ***/
 .footer {
     background: var(--bs-secondary);
 }
@@ -935,7 +922,6 @@ a:hover{
     color: var(--bs-body);
     transition: 0.5s;
 }
-
 .footer .footer-item p {
     line-height: 35px;
 }
@@ -957,15 +943,11 @@ a:hover{
     color: var(--bs-primary);
 }
 /*** Footer End ***/
-
 /*** copyright Start ***/
 .copyright {
     background: var(--bs-dark);
 }
 /*** copyright end ***/
-
-
-
 .logofond {
   background-image: url('../img/ICONE\ CERPEPP\ LOUPE1.svg'); /* Remplacez par l'URL de votre SVG */
   background-size: contain; /* Ajuste l'image pour couvrir tout l'élément */
@@ -974,9 +956,6 @@ a:hover{
   height: 100%; /* Hauteur de l'élément */
   width: 100%; /* Largeur de l'élément */
   position: relative;
- 
-  
-
     animation: zoomBackground 4s ease-in-out forwards; /* Ajoute 'forwards' pour maintenir le style final */
   }
 
@@ -996,29 +975,29 @@ a:hover{
   background-repeat: no-repeat; /* Évite la répétition de l'image */
   background-position:  center ; /* Centre l'image dans l'élément */
   height: 100%; /* Hauteur de l'élément */
-  width: 100%; /* Largeur de l'élément */
+  width: 100%; 
   position: relative;
   
   }
 .logofond7 {
-  background-image: url('../img/logofond7.svg'); /* Remplacez par l'URL de votre SVG */
-  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
-  background-repeat: no-repeat; /* Évite la répétition de l'image */
-  background-position:  center ; /* Centre l'image dans l'élément */
-  height: 100%; /* Hauteur de l'élément */
-  width: 100%; /* Largeur de l'élément */
+  background-image: url('../img/logofond7.svg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position:  center ; 
+  height: 100%;
+  width: 100%; 
   position: relative;
   
   }
 
   
 .logofond2 {
-  background-image: url('../img/ligne.svg'); /* Remplacez par l'URL de votre SVG */
-  background-size: 100%; /* Ajuste l'image pour couvrir tout l'élément */
-  background-repeat: no-repeat; /* Évite la répétition de l'image */
-  background-position:  center; /* Centre l'image dans l'élément */
-  height: 100%; /* Hauteur de l'élément */
-  width: 100%; /* Largeur de l'élément */
+  background-image: url('../img/ligne.svg'); 
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  background-position:  center; 
+  height: 100%; 
+  width: 100%; 
   position: relative;
 
 
@@ -1027,37 +1006,36 @@ a:hover{
  
   @keyframes zoomBackground {
     0% {
-      background-size: contain; /* Débute avec la taille d'origine */
+      background-size: contain; 
     }
     10% {
-      background-size: 10%; /* Zoom à 30% */
+      background-size: 10%;
     }
     80% {
-      background-size: 50%; /* Zoom à 60% */
+      background-size: 50%; 
     }
     100% {
-      background-size: 40%; /* Zoom final à 130% */ 
+      background-size: 40%; 
     }
   }
   @keyframes zoomBackground2 {
     0% {
-      background-size: contain; /* Débute avec la taille d'origine */
+      background-size: contain;
     }
     10% {
-      background-size: 30%; /* Zoom à 30% */
+      background-size: 30%;
     }
     50% {
-      background-size: 50%; /* Zoom à 60% */
+      background-size: 50%; 
     }
     100% {
-      background-size: 100%; /* Zoom final à 130% */
+      background-size: 100%; 
     }
   }
-  
-  
+
   @media (max-width: 450px) {
     .logofond {
-      background-size: cover; /* Utilise cover pour prendre tout l'écran sur mobile */
+      background-size: cover; 
       background-position: center;
       background-position: center;
     }
@@ -1072,17 +1050,14 @@ a:hover{
     border-radius: 8px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .accordion-link:hover {
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .accordion-link.active {
     background-color: #007bff;
     color: white;
 }
-
 .accordion-link.active:hover {
     background-color: #0056b3;
 }
@@ -1104,8 +1079,6 @@ a:hover{
 .titre{
     color: #f17704 !important;
 }
-
-
 .service-item {
     border: 1px solid #ddd;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1123,7 +1096,7 @@ a:hover{
 .service-item img:hover {
     transform: scale(1.02);
 }
-/* Assurer que toutes les cartes ont la même hauteur */
+
 .service-item {
     display: flex;
     flex-direction: column;
@@ -1133,9 +1106,6 @@ a:hover{
 .service-item p {
     flex-grow: 1;
 }
-
-
-/*style de apropos*/
 
 .apropos-section {
     background: #e4ebf4;
@@ -1148,7 +1118,7 @@ a:hover{
     
     
     
-    /* Styles généraux pour la liste et ses éléments */
+ 
     .olcards,
     .olcards * {
     margin: 0;
@@ -1175,7 +1145,7 @@ a:hover{
     margin-top: var(--labelOffset);
     }
     
-    /* Styles pour les numéros de la liste */
+   
     .olcards li::before {
     content: counter(cardCount, decimal-leading-zero);
     background: white;
@@ -1190,8 +1160,7 @@ a:hover{
     align-items: center;
     padding-inline: 0.5em;
     }
-    
-    /* Styles pour le contenu des cartes */
+   
     .olcards li .content {
     background-color: var(--cardColor);
     --inlinePadding: 1em;
@@ -1212,7 +1181,6 @@ a:hover{
     min-height: 10px; /* Ajuste cette valeur selon tes besoins */
     width: 250px;
     }
-    
     .olcards li .content::before {
     content: "";
     position: absolute;
@@ -1224,7 +1192,6 @@ a:hover{
     clip-path: polygon(0 0, 100% 0, 0 100%);
     filter: brightness(0.75);
     }
-    
     .olcards li .content::after {
     content: "";
     position: absolute;
@@ -1234,14 +1201,12 @@ a:hover{
     left: 0;
     top: 100%;
     }
-    
     /* Styles pour les icônes et le texte */
     .olcards li .icon {
     grid-area: icon;
     align-self: center;
     font-size: 2em;
     }
-    
     .olcards li .content .title {
     grid-area: title;
     font-size: 1.25em;
@@ -1258,7 +1223,6 @@ a:hover{
     
   /*style pour mission ,vision*/
    /* Styles de base */
-  
 .liste {
     display: flex;
     flex-direction: column;
@@ -1267,7 +1231,6 @@ a:hover{
     max-width: 1200px;
     margin: auto;
   }
-  
   .list-list {
     transition: transform 0.3s ease; /* Transition fluide sur 0.3 secondes */
     display: flex;
@@ -1282,12 +1245,10 @@ a:hover{
     display: flex;
     flex-direction: column;
   }
-  
   .list-list:hover {
     box-shadow: 0 0 45px rgba(0, 0, 0, .2);
     transform: scale(1.05); /* Agrandit de 5% lors du survol */
   }
-  
   .card-image {
     width: 100%;
     height: auto;
@@ -1302,9 +1263,7 @@ a:hover{
   .card-content h3 {
     margin: 0 0 10px 0;
     font-size: 2.2em;
-  
   }
-  
   .card-content p {
     margin: 0;
     color: #555;
@@ -1321,7 +1280,6 @@ a:hover{
         flex-direction: row;
       
     }
-  
     .image-right .card-container {
         flex-direction: row-reverse;
     }
@@ -1389,7 +1347,6 @@ a:hover{
 .feature-item p {
     flex-grow: 1;
 }
-
 /*outils*/
 
  /*outil*/
@@ -1444,7 +1401,6 @@ a:hover{
 @keyframes blink {
     50% { border-color: transparent; }
 }
-
 .typing {
     display: inline-block; /* Permet d'ajuster la largeur en fonction du texte */
     overflow: hidden; /* Cache le texte qui dépasse */
@@ -1455,7 +1411,6 @@ a:hover{
     width: fit-content; /* Ajuste la largeur du texte */
     /* Optionnel: Ajoutez des marges ou des espacements si nécessaire */
 }
-
 /* Animation continue de typing */
 .typing-restart {
     animation: none;
@@ -1474,7 +1429,6 @@ a:hover{
 .contient-image {
     margin-bottom: 0px; /* Espacement vertical entre les images augmenté */
 }
-  
   .text-white1{
      font-size: 1.5em  !important;
      color: white;
@@ -1502,31 +1456,26 @@ a:hover{
     flex-direction: column;
     justify-content: center;
   }
-  
   .blog-img {
     height: 200px; /* Hauteur fixe pour l'image */
     overflow: hidden;
   }
-
   .blog-img img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Assure que l'image garde ses proportions */
   }
-
   .blog-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .blog-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
-
   .blog-text {
     flex-grow: 1;
     width: 100%;
@@ -1556,7 +1505,6 @@ a:hover{
     max-width: 800px; /* Limite la largeur maximale de la carte */
     height: auto; /* La hauteur s'ajuste en fonction du contenu */
 }
-
 /* Effet survol (hover) */
 .carte:hover {
     transform: translateY(-5px); /* Légère élévation au survol */
@@ -1569,13 +1517,11 @@ a:hover{
   
   
 }
-
 /*style pour banniere des pages */
 .banniere-service {
     position: relative;
     height: 500px;
 }
-
 .banniere-service::before {
     content: '';
     position: absolute;
@@ -1590,12 +1536,10 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: darken;
 }
-
 .banniere-secteur {
     position: relative;
     height: 500px;
 }
-
 .banniere-secteur::before {
     content: '';
     position: absolute;
@@ -1610,12 +1554,10 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: darken;
 }
-
 .banniere-outils {
     position: relative;
     height: 500px;
 }
-
 .banniere-outils::before {
     content: '';
     position: absolute;
@@ -1635,7 +1577,6 @@ a:hover{
     position: relative;
     height: 500px;
 }
-
 .banniere-contact::before {
     content: '';
     position: absolute;
@@ -1655,7 +1596,6 @@ a:hover{
     position: relative;
     height: 500px;
 }
-
 .banniere-equipe::before {
     content: '';
     position: absolute;
@@ -1675,7 +1615,6 @@ a:hover{
     position: relative;
     height: 500px;
 }
-
 .banniere-projet::before {
     content: '';
     position: absolute;
@@ -1690,7 +1629,6 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: darken;
 }
-
 .banniere-service .int {
     position: relative;
     z-index: 2;
@@ -1710,7 +1648,6 @@ a:hover{
     color: #fff; /* Couleur du texte si besoin */
     margin-top: 200px;
 }
-
 .banniere-secteur .int2 {
     position: relative;
     z-index: 2;
@@ -1729,7 +1666,6 @@ a:hover{
     z-index: 2;
     color: #fff !important; /* Couleur du texte si besoin */
 }
-
 .banniere-contact .int {
     position: relative;
     z-index: 2;
@@ -1753,7 +1689,6 @@ a:hover{
     z-index: 2;
     color: #fff !important; /* Couleur du texte si besoin */
 }
-
 .banniere-projet .int {
     position: relative;
     z-index: 2;
@@ -1774,7 +1709,6 @@ a:hover{
     white-space: nowrap; /* Empêche le texte de se plier à la ligne */
     overflow: hidden; /* Cache le texte supplémentaire */
 }
-
 .cursor {
     display: inline-block;
     animation: blink 0.7s step-end infinite; /* Animation du curseur clignotant */
@@ -1843,7 +1777,6 @@ a:hover{
     border-radius: 50%; /* Forme de cercle (si nécessaire) */
     object-fit: contain; 
 }
-
 /* Animation */
 .wrapper {
     height: 10vh;
@@ -1870,8 +1803,6 @@ a:hover{
     40% {
       width: auto; /* Montre la phrase complète */
     }
-   
-    
   }
   
   @keyframes blink {
@@ -1896,17 +1827,14 @@ a:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 }
-
 .carte-img img {
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
-
 .carte-cont {
     max-width: 800px;
     margin-left: 20px;
-  
 }
 /* Styles pour écrans plus petits */
 @media screen and (max-width: 768px) {
@@ -1931,7 +1859,6 @@ a:hover{
         font-size: 0.95rem;
     }
 }
-
 .exp{
     background-image: url('../img/ligne.svg');
 }
@@ -1941,9 +1868,6 @@ a:hover{
 .carte-exp a:hover{
     color:#f17704;
 }
-
-
-
 .sidebar {
     border-right: 1px solid #ddd;
     padding-right: 20px;
@@ -1971,34 +1895,25 @@ a:hover{
     border-radius: 8px;
     transition: transform 0.3s;
 }
-
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
-
 .project-header {
     margin-bottom: 20px;
 }
-
 .project-description {
     margin-top: 20px;
 }
-
 .project-description h3 {
     margin-top: 20px;
 }
-
 .project-cta {
     margin-top: 30px;
     text-align: center;
 }
-
 .project-cta a {
     font-weight: bold;
 }
-
-
-
 .cookie-consent-banner {
     position: fixed;
     bottom: 0;
@@ -2038,7 +1953,6 @@ a:hover{
     font-size: 16px;
     line-height: 24px;
   }
-  
   .cookie-consent-banner__cta {
     box-sizing: border-box;
     display: inline-block;
@@ -2057,7 +1971,6 @@ a:hover{
     font-size: 16px;
     line-height: 20px;
   }
-  
   .cookie-consent-banner__cta--secondary { 
     padding: 9px 13px;
     
@@ -2067,7 +1980,6 @@ a:hover{
     
     color: #f17704;
   }
-  
   .cookie-consent-banner__cta:hover {
     background-color: #f17704;
   }
@@ -2079,12 +1991,9 @@ a:hover{
     
     color: #f17704;
   }
-  
   .cookie-consent-banner__cta:last-child {
     margin-left: 16px;
   }
-  
-
   @keyframes slides {
     from {
       transform: translateX(0);
@@ -2100,7 +2009,6 @@ a:hover{
     white-space: nowrap;
     position: relative;
   }
-  
   .logos:before, .logos:after {
     position: absolute;
     top: 0;
@@ -2109,12 +2017,10 @@ a:hover{
     height: 100%;
     z-index: 2;
   }
-  
   .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
   }
-  
   .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
@@ -2174,9 +2080,6 @@ a:hover{
       animation: 35s slides infinite linear; /* Animation encore plus lente */
     }
   }
-  
- 
-
   .transparent{
     background-color: rgba(255, 255, 255, 0.705)!important;
     
